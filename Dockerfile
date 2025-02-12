@@ -1,6 +1,6 @@
-FROM openjdk:21
+FROM openjdk:21-slim
 
-# Устанавливаем curl с помощью apt-get (для Debian-based образов)
+# Обновляем и устанавливаем curl
 RUN apt-get update && apt-get install -y curl
 
 # Создаем рабочую директорию
