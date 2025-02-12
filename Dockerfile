@@ -1,7 +1,7 @@
-FROM openjdk:23
+FROM openjdk:23-alpine
 
-# Устанавливаем curl
-RUN apt-get update && apt-get install -y curl
+# Устанавливаем curl с помощью apk (для Alpine)
+RUN apk add --no-cache curl
 
 # Создаем рабочую директорию
 WORKDIR /app
