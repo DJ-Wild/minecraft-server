@@ -1,7 +1,7 @@
 FROM openjdk:21
 
-# Устанавливаем curl с помощью apk (для Alpine)
-RUN apk add --no-cache curl
+# Устанавливаем curl с помощью apt-get (для Debian-based образов)
+RUN apt-get update && apt-get install -y curl
 
 # Создаем рабочую директорию
 WORKDIR /app
