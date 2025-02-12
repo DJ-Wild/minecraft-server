@@ -1,5 +1,8 @@
 FROM openjdk:17-jdk-alpine
 
+# Устанавливаем curl
+RUN apk add --no-cache curl
+
 # Создаем рабочую директорию
 WORKDIR /app
 
