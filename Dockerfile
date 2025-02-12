@@ -1,4 +1,4 @@
-FROM openjdk:23-alpine
+FROM openjdk:21-alpine
 
 # Устанавливаем curl с помощью apk (для Alpine)
 RUN apk add --no-cache curl
