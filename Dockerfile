@@ -7,7 +7,7 @@ RUN apk add --no-cache curl
 WORKDIR /app
 
 # Загружаем сервер Minecraft с Dropbox
-RUN curl -o server.jar "https://www.dropbox.com/scl/fi/qh0ev38hm84s2blwzi4m9/server.jar?rlkey=2ppd52mey8vz0off662tcqno1&st=asr2y7y4&dl=1"
+RUN curl -o server.jar "https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar"
 
 # Запуск Minecraft сервера
 CMD ["java", "-Xms1G", "-Xmx2G", "-jar", "server.jar", "nogui"]
