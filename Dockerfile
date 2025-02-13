@@ -13,4 +13,4 @@ RUN curl -o server.jar "https://piston-data.mojang.com/v1/objects/59353fb40c36d3
 RUN java -version
 
 # Запуск Minecraft сервера
-CMD ["java", "-Xms1G", "-Xmx2G", "-jar", "server.jar", "nogui"]
+CMD ["java", "-Xms2G", "-Xmx4G", "-jar", "server.jar", "nogui"]
